@@ -1,0 +1,32 @@
+<html>
+    <script>
+        let stack1 = [];
+    let stack2 = [];
+  
+  
+    function enqueue(element) {
+        stack1.push(element);
+        console.log("Stack1 elements are", stack1);
+    }
+  
+
+    function dequeue() {
+        if (stack2.length === 0) {
+            if (stack1.length === 0) {
+                console.log("Queue is empty");
+            }
+            while (stack1.length > 0) {
+                let x = stack1.pop();
+                stack2.push(x);
+            }
+        }
+        console.log("Element after Dequeue:" + stack2.pop());
+    }
+  
+    enqueue(1);
+    enqueue(2);
+    enqueue(3);
+    dequeue();
+    dequeue();
+    </script>
+</html>
