@@ -1,0 +1,24 @@
+<html>
+    <script>
+        let rec = function (a, x, beg, last) 
+        {
+            if (beg > last) 
+                return false;
+            let mid=Math.floor((beg + last)/2);
+            if (a[mid]===x) 
+                return true;
+            if(a[mid] > x)
+                return rec(a, x, beg, mid-1);
+            else
+                return rec(a, x, mid+1, last);
+        }
+        
+        let a = [100, 25, 5, 89, 31, 19];
+        let x = 31;
+        
+        if (rec(a, x, 0, a.length-1))
+            document.write("Yes the element is found!<br>");
+        else 
+        document.write("The elemnet is not found");
+    </script>
+</html>

@@ -1,0 +1,18 @@
+
+<html>
+<script>
+   const number = parseFloat(prompt("Enter a number to check whether a number is oddish or evenish! "));
+function oddishevenish(number){
+    var sum = 0;
+    while(number != 0){
+        sum =sum+ Math.floor(number % 10);
+        number /= 10;
+    }
+    if((sum % 2)===0)
+        document.write("Evenish");
+    else
+        document.write("Oddish");
+}
+oddishevenish(number);
+</script>
+</html>
