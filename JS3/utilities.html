@@ -1,0 +1,15 @@
+<html>
+    <script>
+        class Utilities 
+        {
+    static camelCase(str) {
+    return str.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+  }
+}
+
+    console.log(Utilities.camelCase("hello there")); 
+    console.log(Utilities.camelCase("HELLO THERE")); 
+    console.log(Utilities.camelCase("I love cookies")); 
+    console.log(Utilities.camelCase("Monkey Banana")); 
+    </script>
+</html>

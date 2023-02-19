@@ -1,0 +1,56 @@
+<html>
+    <script>
+        console.log("CREATING AN EMPTY SET");
+        const x = new Set();
+        console.log(x);
+        console.log("-------------------------");
+        console.log("LOOPING FROM 1 TO 10");
+        const y = new Set();
+        for (var i = 0; i <= 10; i++) 
+        {
+            y.add(i);
+            console.log(i);
+        }
+        console.log("-------------------------");
+        console.log("REMOVING AN ELEMENT");
+        y.delete(5); 
+        console.log(y);
+        console.log("-------------------------");
+        console.log("CLEARING THE WHOLE SET");
+        y.clear(); 
+        console.log(y);
+        console.log("-------------------------");
+        console.log("CREATING A SET OF 5 ELEMENTS")
+        const country = ['Finland', 'Sweeden', 'Norway'];
+        const z = new Set(country);
+        console.log(z);
+        console.log("-------------------------");
+
+        console.log("MAPPING COUNTRIES WITH THE NUMBER OF CHARACTERS")
+        const countryMap = new Map();
+        for (let i of country) {
+        countryMap.set(i,i.length);
+        }
+        console.log(countryMap)
+        console.log("-------------------------");
+
+        const a = new Set([4, 5, 8, 9]);
+        const b = new Set([3, 4, 5, 7]);
+        const union = new Set([...a, ...b]);
+        const intersection = new Set([...a].filter(x => b.has(x)));
+        const difference = new Set([...a].filter(x => !b.has(x)));
+        console.log("UNION")
+        console.log(union);
+        console.log("-------------------------");
+        console.log("INTERSECTION")
+        console.log(intersection);
+        console.log("-------------------------");
+        console.log("DIFFERENCE");
+        console.log(difference);
+        console.log("-------------------------");
+
+
+
+        
+    </script>
+</html>

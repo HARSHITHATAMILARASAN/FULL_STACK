@@ -1,0 +1,55 @@
+
+<html>
+<script>
+    const array = ["Apple","Orange","Banana"];
+    console.log("---------------------------------------")
+    console.log("FOR EACH METHOD")
+
+array.forEach(function(i)
+{
+    
+  console.log(i);
+
+});
+console.log("---------------------------------------")
+console.log("MAP METHOD")
+const num=[10,20,30]
+const square=num.map(function(numbers){
+    return numbers*numbers
+})
+console.log(square)
+console.log("---------------------------------------")
+console.log("FILTER METHOD")
+const arr=["HTML","CSS", "JAVSCRIPT" ,1,2,3,4]
+function getStringLists(arr)
+{
+	const arr1=arr.filter(num=>typeof num=="string")
+	return(arr1)
+}
+console.log(getStringLists(arr))
+console.log("---------------------------------------")
+console.log("COUNTRIES STARTS WITH E")
+
+let country = ["EUROPE","INDIA","ENGLAND"];
+function startsE(country, findE) {
+    return country.filter(function (item) {
+        return item.toLowerCase().indexOf(findE.toLowerCase()) !== -1;
+    });
+}
+console.log(startsE(country, "E"));
+console.log("---------------------------------------")
+
+console.log("DESTRUCTIVE ASSIGNMENTS")
+const num2= [2.72, 3.14, 9.81, 37, 100]
+  let [e, pi, gravity, bodyTemp, boilingTemp] = num2
+  console.log(e,pi,gravity, bodyTemp, boilingTemp)
+  console.log("---------------------------------------")
+
+  console.log("CONCATENATE USING REDUCE")
+var x = ['Estonia, ','Finland, ','Sweden, ','Denmark, ','Norway ,','Iceland '].reduce(function(previous, current, index, array) {
+  return current + previous
+}, 'are the North Europiean countries')
+console.log(x);
+console.log("---------------------------------------")
+</script>
+</html>
