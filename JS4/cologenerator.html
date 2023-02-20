@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>3 EXERCISE</title>
+</head>
+<body id="body">
+	
+	<h1><I>COLOR GENERATOR</I></h1>
+	<button id="generate" value="Click me" onclick="generate()">GENERATE DIFFERENT COLORS</button>
+	
+	
+</body>
+<script>
+	function generate(){
+	
+		var code = "0123456789ABCDEF";
+	    var color = '#';
+	
+		for (var i = 0; i < 6; i++)
+			color += code[(Math.floor(Math.random() * 16))];
+	
+		var b=document.getElementById("body");
+		var c=document.getElementById("code");
+	
+
+		b.style.backgroundColor=`${color}`;
+	}
+</script>
+</html>
