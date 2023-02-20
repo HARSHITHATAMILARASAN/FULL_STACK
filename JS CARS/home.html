@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>
+            HOME PAGE
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+            body{
+            background-size: cover;
+           
+           
+            }
+            li {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    font-size: larger;
+   
+            }
+            a{
+                color: aliceblue;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: large;
+                
+                
+            }
+            #title{
+                color: whitesmoke;
+                margin-right:200;
+                text-align: right;
+                font-size: medium;
+                
+}
+                
+            
+            #content{
+                color: aliceblue;
+                margin-right:200;
+                text-align: right;
+                font-size:xx-large;
+                font-family: "Times New Roman", Times, serif;
+            }
+            button
+            {
+                background-color:  chocolate;
+                border-radius: 8px;
+                text-align: right;
+                    outline: 0;
+                    padding: 5px 16px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border: 1px solid;
+                    color: white;
+                    background-color:chocolate;
+                    border-color:chocolate;
+                    
+                
+                }
+                #explore
+                {
+                    margin-left: 150;
+                    margin-top: 150;
+                    font-size: medium;
+                    
+                }
+                div.slide-up {
+      height:200px;
+      overflow:hidden;
+    }
+    div.slide-up p {
+      animation: 3s slide-up;
+      margin-top:0%;
+    }
+
+                @keyframes slide-up {
+      from {
+        margin-top: 100%;
+        height: 300%; 
+      }
+    
+      to {
+        margin-top: 0%;
+        height: 100%;
+      }
+    }
+    div.slide-left {
+      width:100%;
+      overflow:hidden;
+    }
+    div.slide-left p {
+      animation: slide-left 10s;
+    }
+    
+    @keyframes slide-left {
+      from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+                
+  .popup{
+    width:400px;
+    height:400px;
+    background-color: black;
+    border-radius:6px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    color:chocolate;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+  }
+       .open-popup
+        {
+          visibility: visible;
+          top:50%;
+          transform: translate(-50%,-50%) scale(1);
+        }
+
+
+</style>
+
+</head>
+    
+    
+      
+   
+    <body background="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBtZXJjZWRlc3xlbnwwfHwwfHw%3D&w=1000&q=80" >
+        
+        <nav>
+            
+                
+               <b> <li style="color: chocolate; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">BEST TUNING</li></b>
+            
+            <li><a onmouseover="mouseOver(this)"  onmouseout="mouseOut(this)">home</a></li>
+            <li ><a onmouseover="mouseOver(this)"  onmouseout="mouseOut(this)">project</a></li>
+            <li ><a onmouseover="mouseOver(this)"  onmouseout="mouseOut(this)">team</a></li>
+            <li ><a onmouseover="mouseOver(this)"  onmouseout="mouseOut(this)">contact</a></li>
+            <button dir="rtl" type="submit" onclick="openpopup()" onmouseover="mouseOn(this)" onmouseout="mouseOff(this)">Book an appointment</button>
+            <div class="popup" id="popup">
+              <form>
+                <p>ENTER YOUR NAME</p>
+           <label> <input type="text" id="name"></label>
+           <p>ADDRESS</p>
+           <label><textarea id="address"></textarea></label>
+           <p>ENTER YOUR EMAIL ID</p></form>
+            <label><input type="email" id="emailid"></label>
+           <p>ENTER YOUR PHONE NUMBER</p>
+           <label><input type="text" id="phone"></label><br><br>
+           
+              </form>
+              <button type="button" onclick="closepopup()">BOOK</button>
+            </div>
+            
+          </ul>      
+        </nav>
+          
+          <br><br><br><br><br>
+          
+
+          <div class="slide-left">
+        <p id="title">TUNING PERFECTION</p>
+       
+        <p id="content">Tuning is an upgrade <br>that unlocks hidden<br> potential of your car</p>
+    </div>
+        <div class="slide-up">
+                        <p id="explore"><a href="projects.html" class="fa fa-arrow-down">explore</a></p>
+           
+                    </div>
+                </div>
+                <script src="main.js"></script>
+
+                
+          
+    </body>
+
+</html>
+
+
+    
+    
+    
+    
+    
+    
